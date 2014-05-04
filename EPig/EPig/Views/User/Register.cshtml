@@ -1,0 +1,10 @@
+﻿@model EPig.Models.UserRegViewModel
+
+@{
+    ViewBag.Title = "Register";
+}
+
+@using(Html.BeginForm()){
+    @Html.EditorForModel()
+    <input type="submit" value="注册" />
+}

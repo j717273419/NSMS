@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPig", "EPig\EPig.csproj", "{950B95D5-9E11-432C-A3CD-59D7730691E2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{183B8260-C1AE-4410-BD91-9A774156EBFB} = {183B8260-C1AE-4410-BD91-9A774156EBFB}
+		{E4884F61-C155-48CB-9C1A-EE32B06BCE2B} = {E4884F61-C155-48CB-9C1A-EE32B06BCE2B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPig.Resposity", "EPig.Resposity\EPig.Resposity.csproj", "{183B8260-C1AE-4410-BD91-9A774156EBFB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E4884F61-C155-48CB-9C1A-EE32B06BCE2B} = {E4884F61-C155-48CB-9C1A-EE32B06BCE2B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPig.Model", "EPig.Model\EPig.Model.csproj", "{E4884F61-C155-48CB-9C1A-EE32B06BCE2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPig.UnitTest", "EPig.UnitTest\EPig.UnitTest.csproj", "{CF2184C6-A7B0-4ECC-9707-97D7A3DF1BF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPig.Utiliy", "EPig.Utiliy\EPig.Utiliy.csproj", "{A343269B-A1E8-4D22-8898-922F1B932290}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{950B95D5-9E11-432C-A3CD-59D7730691E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{950B95D5-9E11-432C-A3CD-59D7730691E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{950B95D5-9E11-432C-A3CD-59D7730691E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{950B95D5-9E11-432C-A3CD-59D7730691E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{183B8260-C1AE-4410-BD91-9A774156EBFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183B8260-C1AE-4410-BD91-9A774156EBFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183B8260-C1AE-4410-BD91-9A774156EBFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183B8260-C1AE-4410-BD91-9A774156EBFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4884F61-C155-48CB-9C1A-EE32B06BCE2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4884F61-C155-48CB-9C1A-EE32B06BCE2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4884F61-C155-48CB-9C1A-EE32B06BCE2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4884F61-C155-48CB-9C1A-EE32B06BCE2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF2184C6-A7B0-4ECC-9707-97D7A3DF1BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF2184C6-A7B0-4ECC-9707-97D7A3DF1BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF2184C6-A7B0-4ECC-9707-97D7A3DF1BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF2184C6-A7B0-4ECC-9707-97D7A3DF1BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A343269B-A1E8-4D22-8898-922F1B932290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A343269B-A1E8-4D22-8898-922F1B932290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A343269B-A1E8-4D22-8898-922F1B932290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A343269B-A1E8-4D22-8898-922F1B932290}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

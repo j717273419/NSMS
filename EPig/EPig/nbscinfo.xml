@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<document>
+  <item name="通信传输设备" code="4001">
+    <subitem name="光通信设备" code="400101"></subitem>
+    <subitem name="卫星通信设备" code="400102"></subitem>
+    <subitem name="微波通信设备" code="400103"></subitem>
+    <subitem name="散射通信设备" code="400104"></subitem>
+    <subitem name="载波通信设备" code="400105"></subitem>
+    <subitem name="通信导航定向设备" code="400106"></subitem>
+    <subitem name="通信传输设备零件" code="400107"></subitem>
+  </item>
+  <item name="通信交换设备" code="4002">
+    <subitem name="程控交换机" code="400201"></subitem>
+    <subitem name="ATM交换机" code="4002020000"></subitem>
+    <subitem name="光交换机" code="4002030000"></subitem>
+    <subitem name="通信交换设备零件" code="400204"></subitem>
+    <subitem name="其他通信交换设备" code="4002990000"></subitem>
+  </item>
+  <item name="通信终端设备" code="4003">
+    <subitem name="收发合一中小型电台" code="400301"></subitem>
+    <subitem name="电话单机" code="400302"></subitem>
+    <subitem name="数据终端设备" code="400303"></subitem>
+    <subitem name="通信终端设备用零件" code="400304"></subitem>
+  </item>
+  <item name="移动通信设备" code="4004">
+    <subitem name="数字蜂窝移动电话系统设备" code="400401"></subitem>
+    <subitem name="集群通信系统设备" code="400402"></subitem>
+    <subitem name="无中心选址通信系统设备" code="4004030000"></subitem>
+    <subitem name="移动通信设备零件" code="4004040000"></subitem>
+  </item>
+  <item name="移动通信终端设备及零部件" code="4005">
+    <subitem name="移动通信手持机" code="400501"></subitem>（手机）
+    <subitem name="移动通信终端设备零件" code="400502"></subitem>
+    <subitem name="其他移动通信终端设备" code="400599"></subitem>
+  </item>
+  <item name="通信接入设备" code="4006">
+    <subitem name="光纤接入设备" code="400601"></subitem>
+    <subitem name="铜缆接入设备" code="400602"></subitem>
+    <subitem name="电力线宽带接入设备" code="400603"></subitem>（BPL）
+    <subitem name="固定无线接入设备" code="400604"></subitem>
+  </item>
+  <item name="雷达、无线电导航及无线电遥控设备" code="4007">
+    <subitem name="雷达设备" code="400701"></subitem>
+    <subitem name="无线电导航设备" code="400702"></subitem>
+    <subitem name="无线电遥控设备" code="400703"></subitem>
+    <subitem name="雷达及无线电导航设备零件" code="400704"></subitem>
+  </item>
+  <item name="广播电视设备" code="4008">
+    <subitem name="广播电视节目制作及播控设备" code="400801"></subitem>
+    <subitem name="广播电视发射及传输设备" code="400802"></subitem>
+    <subitem name="应用广播电视设备" code="400803"></subitem>
+    <subitem name="广播电视设备专用配件" code="400804"></subitem>
+  </item>
+  <item name="电子计算机及其部件" code="4009">
+    <subitem name="电子计算机整机" code="400901"></subitem>
+    <subitem name="计算机数字式处理部件" code="400902"></subitem>
+  </item>
+  <item name="计算机网络设备" code="4010">
+    <subitem name="网络控制设备" code="401001"></subitem>
+    <subitem name="网络接口和适配器" code="401002"></subitem>
+    <subitem name="网络连接设备" code="401003"></subitem>
+    <subitem name="网络优化设备" code="401004"></subitem>
+    <subitem name="网络检测设备" code="401005"></subitem>
+    <subitem name="其他计算机网络设备" code="4010990000"></subitem>
+  </item>
+  <item name="电子计算机外部设备及装置" code="4011">
+    <subitem name="终端显示设备" code="401101"></subitem>
+    <subitem name="输入设备及装置" code="401102"></subitem>
+    <subitem name="输出设备及装置" code="401103"></subitem>
+    <subitem name="外存储设备及部件" code="401104"></subitem>
+    <subitem name="阅读机、数据转录及处理机械" code="401105"></subitem>
+  </item>
+  <item name="电子计算机配套产品及耗材" code="4012">
+    <subitem name="微机板卡" code="401201"></subitem>
+    <subitem name="计算机电源" code="401202"></subitem>
+    <subitem name="其他电子计算机配套产品及耗材" code="401299"></subitem>
+  </item>
+  <item name="信息系统安全产品" code="4013">
+    <subitem name="访问控制类设备和系统" code="401301"></subitem>
+    <subitem name="边界防护类设备和系统" code="401302"></subitem>
+    <subitem name="数据保护类设备和系统" code="401303"></subitem>
+    <subitem name="安全检测类设备和系统" code="401304"></subitem>
+    <subitem name="安全智能卡类设备和系统" code="4013050000"></subitem>
+    <subitem name="密钥管理类设备和系统" code="4013060000"></subitem>
+    <subitem name="其他信息系统安全产品" code="4013990000"></subitem>
+  </item>
+  <item name="真空电子器件及零件" code="4014">
+    <subitem name="电子管" code="401401"></subitem>
+    <subitem name="电子束管" code="401402"></subitem>
+    <subitem name="射线计数管" code="4014030000"></subitem>
+    <subitem name="真空开关管" code="401404"></subitem>
+    <subitem name="真空电子器件零件" code="401405"></subitem>
+    <subitem name="其他真空电子器件" code="401499"></subitem>
+  </item>
+  <item name="半导体分立器件" code="4015">
+    <subitem name="半导体二极管" code="401501"></subitem>
+    <subitem name="半导体三极管" code="4015020000"></subitem>
+    <subitem name="小信号晶体管" code="401503"></subitem>
+    <subitem name="功率晶体管" code="401504"></subitem>
+    <subitem name="半导体敏感器件" code="401505"></subitem>
+    <subitem name="其他半导体分立器件" code="4015990000"></subitem>
+  </item>
+  <item name="光电子器件及激光器件" code="4016">
+    <subitem name="光电子器件" code="401610"></subitem>
+    <subitem name="电子束光电器件" code="401611"></subitem>
+    <subitem name="电真空光电子器件" code="401612"></subitem>
+    <subitem name="半导体光电器件" code="401613"></subitem>
+    <subitem name="激光器件" code="401620"></subitem>
+  </item>
+  <item name="集成电路" code="4017">
+    <subitem name="集成电路圆片" code="401701"></subitem>
+    <subitem name="集成电路封装系列" code="401702"></subitem>
+    <subitem name="集成电路成品" code="401703"></subitem>
+  </item>
+  <item name="微电子组件" code="4018">
+    <subitem name="集成电路模块" code="4018010000"></subitem>
+    <subitem name="多芯片封装组件" code="4018020000"></subitem>（MCM）
+    <subitem name="其他微电子组件" code="4018990000"></subitem>
+  </item>
+  <item name="电子元件" code="4019">
+    <subitem name="电容器" code="401901"></subitem>
+    <subitem name="电阻器及电阻网络" code="401902"></subitem>
+    <subitem name="电位器" code="401903"></subitem>
+    <subitem name="频率控制元器件" code="401904"></subitem>
+    <subitem name="磁性材料元件" code="401905"></subitem>
+    <subitem name="电声器件" code="401906"></subitem>
+    <subitem name="射频元器件" code="4019070000"></subitem>
+    <subitem name="电子元件、组件零件" code="401908"></subitem>
+    <subitem name="其他电子元件" code="4019990000"></subitem>
+  </item>
+  <item name="敏感元件及传感器" code="4020">
+    <subitem name="敏感元件" code="402001"></subitem>
+    <subitem name="传感器" code="4020020000"></subitem>
+  </item>
+  <item name="印制电路板" code="4021">
+    <subitem name="刚性印制电路板" code="402101"></subitem>
+    <subitem name="挠性印制电路板" code="402102"></subitem>
+    <subitem name="刚挠印制电路板" code="402103"></subitem>
+    <subitem name="金属芯印制电路板" code="402104"></subitem>
+    <subitem name="齐平印制电路板" code="402105"></subitem>
+    <subitem name="碳膜印制电路板" code="402106"></subitem>
+    <subitem name="其他印制电路板" code="4021990000"></subitem>
+  </item>
+  <item name="家用音视频设备" code="4022">
+    <subitem name="视频设备" code="402201"></subitem>
+    <subitem name="家用影视摄、录、放设备" code="402202"></subitem>
+    <subitem name="家用音响设备" code="402203"></subitem>
+    <subitem name="汽车用音响设备" code="402204"></subitem>
+    <subitem name="家用音视频设备用配件" code="402205"></subitem>
+    <subitem name="其他家用音视频设备" code="4022990000"></subitem>
+  </item>
+  <item name="其他未列明电子设备" code="4099">
+    <subitem name="电子（气）加速器" code="409901"></subitem>
+    <subitem name="邻近卡及签" code="4099020000"></subitem>
+    <subitem name="其他未包括电子设备" code="4099990000"></subitem>
+  </item>
+</document>

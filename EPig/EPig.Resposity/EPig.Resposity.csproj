@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{183B8260-C1AE-4410-BD91-9A774156EBFB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EPig.Resposity</RootNamespace>
+    <AssemblyName>EPig.Resposity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interface\ICategoryResposity.cs" />
+    <Compile Include="Interface\IDepartmentResposity.cs" />
+    <Compile Include="Interface\INewsResposity.cs" />
+    <Compile Include="Interface\IUserResposity.cs" />
+    <Compile Include="Method\BaseResposity.cs" />
+    <Compile Include="Method\CategoryResposity.cs" />
+    <Compile Include="Method\DepartmentResposity.cs" />
+    <Compile Include="Method\NewsResposity.cs" />
+    <Compile Include="Method\UserResposity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThrowErr\DbDeleteException.cs" />
+    <Compile Include="ThrowErr\DbNotFoundException.cs" />
+    <Compile Include="ThrowErr\DbSaveException.cs" />
+    <Compile Include="ThrowErr\ExistedCategoryNameException.cs" />
+    <Compile Include="ThrowErr\ExistedDepartmentNameException.cs" />
+    <Compile Include="ThrowErr\ExistedUserNameException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EPig.Model\EPig.Model.csproj">
+      <Project>{e4884f61-c155-48cb-9c1a-ee32b06bce2b}</Project>
+      <Name>EPig.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPig.Utiliy\EPig.Utiliy.csproj">
+      <Project>{a343269b-a1e8-4d22-8898-922f1b932290}</Project>
+      <Name>EPig.Utiliy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
