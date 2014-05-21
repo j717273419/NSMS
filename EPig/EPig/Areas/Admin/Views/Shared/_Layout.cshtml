@@ -1,0 +1,53 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!-- 后台公共css -->
+    @Styles.Render("~/Content/bootstrap")
+</head>
+<body>
+    <div class="head container">
+        <div class="page-header">
+            <h1><b>后台管理</b>&nbsp;<small>Xamarin-CN</small></h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- 左部分 -->
+            <div class="col-md-3 col-lg-3 col-sm-2 col-xs-2">
+                <!-- 导航 -->
+                <ul class="nav nav-tabs nav-pills nav-stacked" role="navigation">
+                    <li class="active">
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">分类管理</a>
+                    </li>
+                    <li>
+                        <a href="#">新闻管理<span class="badge">5</span></a>
+                    </li>
+                    <li>
+                        <a href="#">用户管理</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 右部分 -->
+            <div class="col-md-9 col-lg-9 col-sm-10 col-xs-10">
+                <!-- 内容体 -->
+                @RenderBody()
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </div>
+    <!-- 后台公共js -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>

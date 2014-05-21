@@ -15,5 +15,26 @@ namespace EPig.Areas.Admin.Controllers
         {
             return View();
         }
+
+        public ActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Add(string name)
+        {
+            return View();
+        }
+
+        public ActionResult Edit()
+        {
+            return View();
+        }
+
+        public ActionResult List()
+        {
+            return View();
+        }
     }
 }

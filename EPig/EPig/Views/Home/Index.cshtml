@@ -1,10 +1,103 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
-
-<div style="background-image:url(/Images/site.jpg);background-position:center;background-repeat:no-repeat;width:100%;height:900px;margin:auto;" >
-
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-target="#navbarbody" data-toggle="collapse">
+                <span class="sr-only">更多</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://www.xamarin-cn.com" class="navbar-brand">Xamarin-CN
+            </a>
+        </div>
+        <div id="navbarbody" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle">跨平台部分
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation">
+                            <a role="menuitem">技术文章
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem">示例项目
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem">其他
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle">安卓部分
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation">
+                            <a role="menuitem">技术文章
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem">示例项目
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem">其他
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle">苹果部分
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation">
+                            <a role="menuitem">技术文章
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem">示例项目
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem">其他
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">程序下载
+                    </a>
+                </li>
+                <li>
+                    <a href="#">关于我们
+                    </a>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="关键字" />
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+        </div>
+    </div>
 </div>
-<div style="text-align:right;" >
-    <b>by y-z-f</b>
+<div class="container">
+    <div class="jumbotron">
+        <h1>欢迎来到Xamarin技术分享网站</h1>
+        <p>
+            我们希望志同道合的人们汇聚于此，共同的进步，推进Xamarin。
+        </p>
+        <p>
+            这里我希望有人可以跟我一起搭建这个网站，QQ：<label class="label label-danger">976691141</label>
+        </p>
+    </div>
 </div>

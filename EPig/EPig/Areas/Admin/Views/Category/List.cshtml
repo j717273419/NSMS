@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "分类列表";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h1 class="panel-title">分类列表
+        </h1>
+    </div>
+    <div class="panel-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>微缩图</th>
+                    <th>分类名称</th>
+                    <th>所属父类</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>aaaa</td>
+                    <td>aaaa</td>
+                    <td>aaaaa</td>
+                    <td>
+                        <a href="@Url.Action("Edit")">
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </a>&nbsp;
+                                <a href="@Url.Action("Remove")">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>aaaa</td>
+                    <td>aaaa</td>
+                    <td>aaaaa</td>
+                    <td>
+                        <a href="@Url.Action("Edit")">
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </a>&nbsp;
+                                <a href="@Url.Action("Remove")">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>aaaa</td>
+                    <td>aaaa</td>
+                    <td>aaaaa</td>
+                    <td>
+                        <a href="@Url.Action("Edit")">
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </a>&nbsp;
+                                <a href="@Url.Action("Remove")">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>aaaa</td>
+                    <td>aaaa</td>
+                    <td>aaaaa</td>
+                    <td>
+                        <a href="@Url.Action("Edit")">
+                            <span title="编辑" class="glyphicon glyphicon-edit"></span>
+                        </a>
+                        &nbsp;
+                                <a href="@Url.Action("Remove")">
+                                    <span title="删除" class="glyphicon glyphicon-remove"></span>
+                                </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-right">
+            <a class="btn btn-primary btn-lg" href="@Url.Action("Add")">添加分类</a>
+        </div>
+    </div>
+</div>
