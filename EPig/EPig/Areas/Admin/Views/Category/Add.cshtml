@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Title = "添加分类";
-    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    Layout = "~/Areas/Admin/Views/Shared/_Category.cshtml";
 }
 <!-- 面板 -->
 <div class="panel panel-primary">
@@ -10,25 +10,23 @@
     </div>
     <!-- 面板体 -->
     <div class="panel-body">
-        @using (Html.BeginForm("Add", "Category", FormMethod.Post, new { role = "form" }))
+        @using (Html.BeginForm("Add", "Category", FormMethod.Post, new { role = "form", enctype = "multipart/form-data" }))
         {
             <div class="form-group">
                 <label for="belCategory">所属分类:</label>
-                <select id="belCategory" class="form-control">
-                    <option>新建</option>
-                </select>
+                @Html.Action("ParentType")
             </div>
             <div class="form-group">
                 <label for="categoryName">分类名称:</label>
-                <input id="categoryName" type="text" class="form-control" placeholder="名称" />
+                <input id="categoryName" type="text" name="CName" class="form-control" placeholder="名称" />
             </div>
             <div class="form-group">
                 <label for="suggestUrl">建议URL:</label>
-                <input id="suggestUrl" type="text" class="form-control" placeholder="android_view" />
+                <input id="suggestUrl" name="CSuggestUrl" type="text" class="form-control" placeholder="android_view" />
             </div>
             <div class="form-group">
                 <label for="fileUp">微缩图:</label>
-                <input type="file" id="fileUp" class="form-control" />
+                <input type="file" id="fileUp" name="CFileUp" class="form-control" />
             </div>
             <div class="text-right">
                 <button type="submit" class="btn btn-primary btn-lg">添加</button>

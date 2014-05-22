@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Title = "编辑分类";
-    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    Layout = "~/Areas/Admin/Views/Shared/_Category.cshtml";
 }
 <!-- 面板 -->
 <div class="panel panel-primary">
@@ -10,7 +10,7 @@
     </div>
     <!-- 面板体 -->
     <div class="panel-body">
-        @using (Html.BeginForm("Add", "Category", FormMethod.Post, new { role = "form" }))
+        @using (Html.BeginForm("Edit", "Category", FormMethod.Post, new { role = "form" }))
         {
             <div class="form-group">
                 <label for="belCategory">所属分类:</label>

@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section LeftMenu{
+    <ul class="nav nav-tabs nav-pills nav-stacked" role="navigation">
+        <li>
+            @Html.ActionLink("首页", "Index", "Common")
+        </li>
+        <li>
+            @Html.ActionLink("新闻管理", "List", "News")
+        </li>
+        <li>
+            @Html.ActionLink("分类管理", "List", "Category")
+        </li>
+        <li class="active" >
+            @Html.ActionLink("用户管理", "List", "User")
+        </li>
+    </ul>
+}
+
+@RenderBody()

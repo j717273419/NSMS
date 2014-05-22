@@ -1,0 +1,12 @@
+﻿@model IEnumerable<EPig.Areas.Admin.Models.CategoryDropDownItem>
+@{
+    Layout = null;
+}
+
+<select id="belCategory" name="CType" class="form-control">
+    <option value="new" selected="selected" >新建</option>
+    @foreach (var item in Model)
+    {
+        <option value="@item.ID">@item.Name</option>
+    }
+</select>

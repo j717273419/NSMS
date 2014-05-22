@@ -11,6 +11,9 @@ namespace EPig.Areas.Admin.Controllers
     /// </summary>
     public class CommonController : Controller
     {
-
+        public ActionResult Index()
+        {
+            return View();
+        }
     }
 }

@@ -23,20 +23,7 @@
             <!-- 左部分 -->
             <div class="col-md-3 col-lg-3 col-sm-2 col-xs-2">
                 <!-- 导航 -->
-                <ul class="nav nav-tabs nav-pills nav-stacked" role="navigation">
-                    <li class="active">
-                        <a href="#">首页</a>
-                    </li>
-                    <li>
-                        <a href="#">分类管理</a>
-                    </li>
-                    <li>
-                        <a href="#">新闻管理<span class="badge">5</span></a>
-                    </li>
-                    <li>
-                        <a href="#">用户管理</a>
-                    </li>
-                </ul>
+                @RenderSection("LeftMenu")
             </div>
             <!-- 右部分 -->
             <div class="col-md-9 col-lg-9 col-sm-10 col-xs-10">
