@@ -1,21 +1,26 @@
-﻿using System;
+﻿using EPig.Resposity.Interface;
+using Ninject;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using EPig.Resposity.Interface;
-using Ninject;
 
 namespace EPig.Areas.Admin.Controllers
 {
     /// <summary>
-    /// 分类管理
+    /// 新闻管理
     /// </summary>
-    public class CategoryController : Controller
+    public class NewsController : Controller
     {
-        //ioc注入
+        //Ioc注入
         [Inject]
-        public ICategoryRepository CategoryRepository { get; set; }
+        public INewsRepository NewsRepository { get; set; }
+
+        public ActionResult List()
+        {
+            return View();
+        }
 
         public ActionResult Add()
         {
@@ -23,11 +28,6 @@ namespace EPig.Areas.Admin.Controllers
         }
 
         public ActionResult Edit()
-        {
-            return View();
-        }
-
-        public ActionResult List()
         {
             return View();
         }

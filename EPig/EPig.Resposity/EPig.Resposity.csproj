@@ -54,12 +54,6 @@
     <Compile Include="Method\NewsRepository.cs" />
     <Compile Include="Method\UserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThrowErr\DbDeleteException.cs" />
-    <Compile Include="ThrowErr\DbNotFoundException.cs" />
-    <Compile Include="ThrowErr\DbSaveException.cs" />
-    <Compile Include="ThrowErr\ExistedCategoryNameException.cs" />
-    <Compile Include="ThrowErr\ExistedDepartmentNameException.cs" />
-    <Compile Include="ThrowErr\ExistedUserNameException.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EPig.Model\EPig.Model.csproj">
