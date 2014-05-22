@@ -7,8 +7,15 @@ namespace EPig.Model.Enums
 {
     public enum UserRoleType
     {
-        Admin = 0x0f00,
-        User = 0xf000,
-        None = 0xffff
+        None = 0,
+        /// <summary>
+        /// 普通用户
+        /// </summary>
+        User = 1,
+        /// <summary>
+        /// 管理员
+        /// </summary>
+        Admin = 2,
+        All = 3
     }
 }

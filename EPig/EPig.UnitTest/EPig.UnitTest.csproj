@@ -78,9 +78,9 @@
       <Project>{183b8260-c1ae-4410-bd91-9a774156ebfb}</Project>
       <Name>EPig.Resposity</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EPig.Utiliy\EPig.Utiliy.csproj">
+    <ProjectReference Include="..\EPig.Utiliy\EPig.Utility.csproj">
       <Project>{a343269b-a1e8-4d22-8898-922f1b932290}</Project>
-      <Name>EPig.Utiliy</Name>
+      <Name>EPig.Utility</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

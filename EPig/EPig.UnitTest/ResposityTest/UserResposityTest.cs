@@ -13,7 +13,7 @@ namespace EPig.UnitTest
     [TestClass]
     public class UserResposityTest
     {
-        UserResposity ur = new UserResposity();
+        UserRepository ur = new UserRepository();
 
         [TestMethod]
         public void RegisterTest()
@@ -33,7 +33,7 @@ namespace EPig.UnitTest
         [TestMethod]
         public void GetUserInfoTest()
         {
-            EUser user = ur.GetUserById("20140314165749811156");
+            User user = ur.GetUserById("20140314165749811156");
             Assert.IsNotNull(user);
 
             user = ur.GetUserById("20140314165749811152");
@@ -52,7 +52,7 @@ namespace EPig.UnitTest
             bool result = false;
 
             ur.ChangeUserInfo("20140314165749811156", 5, DateTime.Now, false);
-            EUser user = ur.GetUserById("20140314165749811156");
+            User user = ur.GetUserById("20140314165749811156");
             Assert.AreEqual(user.Age, 5);
 
             try
@@ -81,7 +81,7 @@ namespace EPig.UnitTest
         [TestMethod]
         public void LoginTest()
         {
-            EUser user = ur.Login("123456", "1234567");
+            User user = ur.Login("123456", "1234567");
             Assert.IsNotNull(user);
         }
     }

@@ -16,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPig.Model", "EPig.Model\EP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPig.UnitTest", "EPig.UnitTest\EPig.UnitTest.csproj", "{CF2184C6-A7B0-4ECC-9707-97D7A3DF1BF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPig.Utiliy", "EPig.Utiliy\EPig.Utiliy.csproj", "{A343269B-A1E8-4D22-8898-922F1B932290}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPig.Utility", "EPig.Utiliy\EPig.Utility.csproj", "{A343269B-A1E8-4D22-8898-922F1B932290}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

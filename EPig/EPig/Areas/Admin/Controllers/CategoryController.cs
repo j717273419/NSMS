@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using EPig.Resposity.Interface;
+using Ninject;
 
 namespace EPig.Areas.Admin.Controllers
 {
@@ -11,10 +13,9 @@ namespace EPig.Areas.Admin.Controllers
     /// </summary>
     public class CategoryController : Controller
     {
-        public ActionResult Index()
-        {
-            return View();
-        }
+        //ioc注入
+        [Inject]
+        public ICategoryRepository CategoryRepository { get; set; }
 
         public ActionResult Add()
         {

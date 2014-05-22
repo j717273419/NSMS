@@ -14,11 +14,8 @@ namespace EPig.Model.Constaint
         {
         }
 
-
-        public DbSet<EUser> User { get; set; }
-        public DbSet<BigCategory> BigCategory { get; set; }
-        public DbSet<EDepartment> Department { get; set; }
-        public DbSet<ENews> News { get; set; }
-        public DbSet<SubCategory> SubCategory { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Category> Categorys { get; set; }
+        public DbSet<News> News { get; set; }
     }
 }

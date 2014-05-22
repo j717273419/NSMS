@@ -46,15 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interface\ICategoryResposity.cs" />
-    <Compile Include="Interface\IDepartmentResposity.cs" />
-    <Compile Include="Interface\INewsResposity.cs" />
-    <Compile Include="Interface\IUserResposity.cs" />
+    <Compile Include="Interface\ICategoryRepository.cs" />
+    <Compile Include="Interface\INewsRepository.cs" />
+    <Compile Include="Interface\IUserRepository.cs" />
     <Compile Include="Method\BaseResposity.cs" />
-    <Compile Include="Method\CategoryResposity.cs" />
-    <Compile Include="Method\DepartmentResposity.cs" />
-    <Compile Include="Method\NewsResposity.cs" />
-    <Compile Include="Method\UserResposity.cs" />
+    <Compile Include="Method\CategoryRepository.cs" />
+    <Compile Include="Method\NewsRepository.cs" />
+    <Compile Include="Method\UserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThrowErr\DbDeleteException.cs" />
     <Compile Include="ThrowErr\DbNotFoundException.cs" />
@@ -68,9 +66,9 @@
       <Project>{e4884f61-c155-48cb-9c1a-ee32b06bce2b}</Project>
       <Name>EPig.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EPig.Utiliy\EPig.Utiliy.csproj">
+    <ProjectReference Include="..\EPig.Utiliy\EPig.Utility.csproj">
       <Project>{a343269b-a1e8-4d22-8898-922f1b932290}</Project>
-      <Name>EPig.Utiliy</Name>
+      <Name>EPig.Utility</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

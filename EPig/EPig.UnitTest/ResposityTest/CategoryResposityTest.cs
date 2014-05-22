@@ -10,13 +10,13 @@ namespace EPig.UnitTest.ResposityTest
     [TestClass]
     public class CategoryResposityTest
     {
-        private CategoryResposity cr = new CategoryResposity();
+        private CategoryRepository cr = new CategoryRepository();
 
         [TestMethod]
         public void BigCategoryTest()
         {
             bool result = false;
-            BigCategory bc = cr.AddBigCategory("测试分类", Model.Enums.CategoryStateType.Enabled);
+            Category bc = cr.AddBigCategory("测试分类", Model.Enums.CategoryStateType.Enabled);
             bc = cr.GetBigCategoryByID(bc.ID);
             Assert.IsNotNull(bc);
 
@@ -30,7 +30,7 @@ namespace EPig.UnitTest.ResposityTest
             }
             Assert.IsTrue(result);
 
-            List<BigCategory> bcs = cr.GetAllBigCategory();
+            List<Category> bcs = cr.GetAllBigCategory();
             Assert.AreEqual(bcs.Count, 1);
 
             cr.EditBigCategory(bc.ID, "修改后的分类", Model.Enums.CategoryStateType.Enabled);
@@ -46,7 +46,7 @@ namespace EPig.UnitTest.ResposityTest
         [TestMethod]
         public void SubCategoryTest()
         {
-            BigCategory bc = cr.AddBigCategory("测试分类1", Model.Enums.CategoryStateType.Enabled);
+            Category bc = cr.AddBigCategory("测试分类1", Model.Enums.CategoryStateType.Enabled);
 
             SubCategory sc = cr.AddSubCategory(bc.ID, "测试小类", Model.Enums.CategoryStateType.Enabled);
             sc = cr.GetSubCategoryByID(sc.ID);

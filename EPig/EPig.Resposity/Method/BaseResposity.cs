@@ -8,6 +8,6 @@ namespace EPig.Resposity.Method
 {
     public class BaseResposity
     {
-        protected DataContent Dc = new DataContent();
+        protected DataContent Context = new DataContent();
     }
 }

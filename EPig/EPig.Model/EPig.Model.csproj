@@ -47,16 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constaint\DataContent.cs" />
-    <Compile Include="Entities\BigCategory.cs" />
-    <Compile Include="Entities\EDepartment.cs" />
-    <Compile Include="Entities\ENews.cs" />
-    <Compile Include="Entities\EUser.cs" />
-    <Compile Include="Entities\SubCategory.cs" />
-    <Compile Include="Enums\CategoryStateType.cs" />
-    <Compile Include="Enums\DepartmentType.cs" />
-    <Compile Include="Enums\NewState.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\News.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Enums\UserRoleType.cs" />
-    <Compile Include="Enums\UserStateType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

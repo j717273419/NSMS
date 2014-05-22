@@ -51,10 +51,9 @@ namespace EPig.App_Start
 
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IUserResposity>().To<UserResposity>();
-            kernel.Bind<INewsResposity>().To<NewsResposity>();
-            kernel.Bind<IDepartmentResposity>().To<DepartmentResposity>();
-            kernel.Bind<ICategoryResposity>().To<CategoryResposity>();
+            kernel.Bind<IUserRepository>().To<UserRepository>();
+            kernel.Bind<INewsRepository>().To<NewsRepository>();
+            kernel.Bind<ICategoryRepository>().To<CategoryRepository>();
         }
     }
 }
