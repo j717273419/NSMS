@@ -66,6 +66,13 @@ namespace EPig.Resposity.Interface
         /// <exception cref="ExistedCategoryNameException">存在重复的分类名称</exception>
         /// <exception cref="ExistedSuggestUrlException">存在重复的建议URL</exception>
         void EditCategoryById(int cid, String name, String suggestUrl = null, String imgPth = null, int? parentID = null);
+
+        /// <summary>
+        /// 根据父类获取小类
+        /// </summary>
+        /// <param name="parentid">父类id</param>
+        /// <returns>返回小类</returns>
+        IList<Category> GetCategoryByParentId(int parentid);
     }
 
     #region 接口中的异常

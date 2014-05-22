@@ -3,82 +3,83 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using EPig.Resposity.Method;
 using EPig.Model.Entities;
 using System.Collections.Generic;
-using EPig.Resposity.ThrowErr;
+using EPig.Resposity.Interface;
 
 namespace EPig.UnitTest.ResposityTest
 {
     [TestClass]
     public class CategoryResposityTest
     {
-        private CategoryRepository cr = new CategoryRepository();
+        private ICategoryRepository cr = new CategoryRepository();
 
         [TestMethod]
-        public void BigCategoryTest()
+        public void TestAdd()
         {
-            bool result = false;
-            Category bc = cr.AddBigCategory("测试分类", Model.Enums.CategoryStateType.Enabled);
-            bc = cr.GetBigCategoryByID(bc.ID);
-            Assert.IsNotNull(bc);
-
+            string name = "测试分类";
+            string url = "test_url";
             try
             {
-                cr.AddBigCategory("测试分类", Model.Enums.CategoryStateType.Enabled);
+                cr.AddCategory(name, url, null, null);
             }
-            catch (ExistedCategoryNameException)
+            catch(Exception)
             {
-                result = true;
+                Assert.Fail();
             }
-            Assert.IsTrue(result);
 
-            List<Category> bcs = cr.GetAllBigCategory();
-            Assert.AreEqual(bcs.Count, 1);
+            Category c = cr.GetCategoryBySuggestUrl(url);
 
-            cr.EditBigCategory(bc.ID, "修改后的分类", Model.Enums.CategoryStateType.Enabled);
-            bc = cr.GetBigCategoryByID(bc.ID);
-            Assert.AreEqual(bc.Name, "修改后的分类");
+            Assert.IsNotNull(c);
 
-            cr.DeleteBigCategory(bc.ID);
-
-            bc = cr.GetBigCategoryByID(bc.ID);
-            Assert.IsNull(bc);
+            cr.DeleteCategoryById(c.ID.Value);
         }
 
         [TestMethod]
-        public void SubCategoryTest()
+        public void TestRepeatUrlAdd()
         {
-            Category bc = cr.AddBigCategory("测试分类1", Model.Enums.CategoryStateType.Enabled);
-
-            SubCategory sc = cr.AddSubCategory(bc.ID, "测试小类", Model.Enums.CategoryStateType.Enabled);
-            sc = cr.GetSubCategoryByID(sc.ID);
-            Assert.IsNotNull(sc);
-
-            bool result = false;
+            string name = "测试分类";
+            string url = "test_url";
+            bool isTrue = false;
+            cr.AddCategory(name, url, null, null);
             try
             {
-                cr.AddSubCategory(bc.ID, "测试小类", Model.Enums.CategoryStateType.Enabled);
+                cr.AddCategory("测试分类1", url, null, null);
+            }
+            catch (ExistedSuggestUrlException)
+            {
+                isTrue = true;
+            }
+            Assert.IsTrue(isTrue);
+
+            Category c = cr.GetCategoryBySuggestUrl(url);
+            Assert.IsNotNull(c);
+
+            Category c1 = cr.GetCategoryById(c.ID.Value);
+            Assert.IsNotNull(c1);
+
+            cr.DeleteCategoryById(c1.ID.Value);
+        }
+
+        [TestMethod]
+        public void TestRepeatNameAdd()
+        {
+            string name = "测试分类";
+            string url = "test_url";
+            bool isTrue = false;
+            cr.AddCategory(name, url, null, null);
+            try
+            {
+                cr.AddCategory(name, "test_url1", null, null);
             }
             catch (ExistedCategoryNameException)
             {
-                result = true;
+                isTrue = true;
             }
-            Assert.IsTrue(result);
+            Assert.IsTrue(isTrue);
 
-            List<SubCategory> scs = cr.GetAllSubCategory();
-            Assert.AreEqual(scs.Count, 1);
+            Category c = cr.GetCategoryBySuggestUrl(url);
 
-            scs = cr.GetSubCategoryListByBID(bc.ID);
-            Assert.AreEqual(scs.Count, 1);
-
-            cr.EditSubCategory(sc.ID, "修改后的分类", null, Model.Enums.CategoryStateType.Enabled);
-            sc = cr.GetSubCategoryByID(sc.ID);
-            Assert.AreEqual(sc.Name, "修改后的分类");
-
-            cr.DeleteSubCategory(sc.ID);
-
-            sc = cr.GetSubCategoryByID(sc.ID);
-            Assert.IsNull(sc);
-
-            cr.DeleteBigCategory(bc.ID);
+            Assert.IsNotNull(c);
+            cr.DeleteCategoryById(c.ID.Value);
         }
     }
 }

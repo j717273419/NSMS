@@ -49,7 +49,7 @@ namespace EPig.Resposity.Interface
         /// <param name="age">年龄</param>
         /// <exception cref="ExistedEmailException">存在重复的邮箱</exception>
         /// <exception cref="NofFoundUserException">不存在指定的用户</exception>
-        void EditUser(int uid, String nickName, String pwd = null, bool? sex = null, string phoneNum = null, String email = null, DateTime? birthDate, int? age);
+        void EditUser(int uid, String nickName, String pwd = null, bool? sex = null, string phoneNum = null, String email = null, DateTime? birthDate = null, int? age = null);
 
     }
 

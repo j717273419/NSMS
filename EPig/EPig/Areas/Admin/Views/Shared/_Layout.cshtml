@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <!-- 后台公共css -->
+    @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/bootstrap")
 </head>
 <body>
@@ -24,10 +25,10 @@
                 <!-- 导航 -->
                 <ul class="nav nav-tabs nav-pills nav-stacked" role="navigation">
                     <li class="active">
-                        <a  href="#">首页</a>
+                        <a href="#">首页</a>
                     </li>
                     <li>
-                        <a  href="#">分类管理</a>
+                        <a href="#">分类管理</a>
                     </li>
                     <li>
                         <a href="#">新闻管理<span class="badge">5</span></a>
@@ -48,6 +49,7 @@
     </div>
     <!-- 后台公共js -->
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/bootstrap")
 </body>
 </html>

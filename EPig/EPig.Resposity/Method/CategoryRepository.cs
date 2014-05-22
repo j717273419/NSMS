@@ -22,10 +22,7 @@ namespace EPig.Resposity.Method
         /// <returns>存在返回true否则返回false</returns>
         public bool ExistedCategory(int cid)
         {
-            int count = (from item in Context.Categorys
-                         where item.ID.Equals(cid)
-                         select item).Count();
-            return count > 0 ? true : false;
+            return Context.Categorys.Find(cid) != null ? true : false;
         }
 
         /// <summary>
@@ -95,9 +92,7 @@ namespace EPig.Resposity.Method
         {
             if (ExistedCategory(cid))
             {
-                Category result = (from item in Context.Categorys
-                                   where item.ID.Equals(cid)
-                                   select item).FirstOrDefault();
+                Category result = Context.Categorys.Find(cid);
                 return result;
             }
             return null;
@@ -184,6 +179,14 @@ namespace EPig.Resposity.Method
                 Context.Categorys.Attach(c);
                 Context.SaveChanges();
             }
+        }
+
+        public IList<Category> GetCategoryByParentId(int parentid)
+        {
+            var result = (from item in Context.Categorys
+                          where item.ParentID.Equals(parentid)
+                          select item).ToList();
+            return result;
         }
 
         #endregion ICategoryRepository接口实现
