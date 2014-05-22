@@ -105,6 +105,7 @@ namespace EPig.Resposity.Method
             u.NickName = nickName;
             u.Password = pwd;
             u.URole = role;
+            u.RegsTime = DateTime.Now;
             Context.Users.Add(u);
             Context.SaveChanges();
         }
