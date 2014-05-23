@@ -240,6 +240,7 @@
     <Content Include="Areas\Admin\Views\Shared\_News.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_User.cshtml" />
     <Content Include="Areas\Admin\Views\Category\ParentType.cshtml" />
+    <None Include="Properties\PublishProfiles\EPigR.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Images\site.jpg" />
     <Content Include="Scripts\bootstrap.js" />
